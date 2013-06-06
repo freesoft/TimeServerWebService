@@ -1,0 +1,6 @@
+This is SOAP WebService template project. It just use JAX-WS libraries included in Java 1.6+.
+
+* build environment
+Java 1.6+
+
+Project also includes Eclipse Juno's configuration.
