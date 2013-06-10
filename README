@@ -16,7 +16,7 @@ java -jar <jar filename under /target>
 For testing, you can simply send SOAP message as below through your telnet, RestClient in FireFox, or others.
 
 <connection info>
-POST http://127.0.0.1:8080 HTTP/ 1.0
+POST http://127.0.0.1:5000 HTTP/ 1.0
 
 <http header>
 Accept: text/xml
