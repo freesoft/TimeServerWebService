@@ -24,7 +24,8 @@ Generated jar with "mvn package" isn't executable jar, so you can't "java -jar x
 
 For testing, you can simply send SOAP message as below through your telnet, RestClient in FireFox, or others.
 
-```<connection info>
+```
+<connection info>
 POST http://127.0.0.1:5000 HTTP/ 1.0
 
 <http header>
