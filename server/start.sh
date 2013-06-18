@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar target/server-0.0.1-SNAPSHOT.jar
+java -jar target/timeserver-0.0.1-SNAPSHOT.jar

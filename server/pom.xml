@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.potatosoft</groupId>
-	<artifactId>server</artifactId>
+	<artifactId>timeserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TimeServer Server Module</name>
 	<description>SOAP based TimeServer WebService</description>
@@ -56,30 +56,6 @@
 						<goals>
 							<goal>single</goal>
 						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.jvnet.jax-ws-commons</groupId>
-				<artifactId>jaxws-maven-plugin</artifactId>
-				<version>2.2.1</version>
-				<executions>
-					<execution>
-						<phase>generate-source</phase>
-						<goals>
-							<goal>wsimport</goal>
-						</goals>
-						<configuration>
-							<extension>true</extension>
-							<wsdlUrls>
-								<wsdlUrl>http://localhost:5000/ts?wsdl</wsdlUrl>
-							</wsdlUrls>
-							<sourceDestDir>${project.build.directory}/client</sourceDestDir>
-							<verbose>true</verbose>
-							<keep>true</keep>
-							<packageName>com.potatosoft.TimeServerWebService.client</packageName>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

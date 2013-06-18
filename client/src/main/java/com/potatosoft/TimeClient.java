@@ -6,6 +6,8 @@ import java.net.URL;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
+import com.potatosoft.TimeServerWebService.client.TimeServer;
+
 /**
  * Very basic SOAP WebService client for TimeServer.
  * 

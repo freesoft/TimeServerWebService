@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.potatosoft</groupId>
-	<artifactId>client</artifactId>
+	<artifactId>timeserver-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TimeServer Client Module</name>
 	<description>SOAP based TimeServer WebService</description>
@@ -21,7 +21,6 @@
 
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -41,16 +40,17 @@
 				<version>2.2.1</version>
 				<executions>
 					<execution>
-						<phase>generate-resource</phase>
+						<id>generate-stubs</id>
 						<goals>
 							<goal>wsimport</goal>
 						</goals>
 						<configuration>
 							<extension>true</extension>
+							<genWsdl>true</genWsdl>
 							<wsdlUrls>
 								<wsdlUrl>http://localhost:5000/ts?wsdl</wsdlUrl>
 							</wsdlUrls>
-							<sourceDestDir>${project.build.directory}/client</sourceDestDir>
+							<sourceDestDir>${project.basedir}/src/main/java</sourceDestDir>
 							<verbose>true</verbose>
 							<keep>true</keep>
 							<packageName>com.potatosoft.TimeServerWebService.client</packageName>
