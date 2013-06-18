@@ -1,17 +1,25 @@
-This is super-simple SOAP WebService template project. It just use JAX-WS libraries included in Java 1.6+.
+This is super-simple SOAP WebService template project. This project uses JAX-WS libraries included in Java 1.6+.
+(Project itself is using Java 7)
 
-* build environment
-Java 1.6+
+= author =
+* Wonhee Jung
 
-Project also includes Eclipse Juno's configuration.
+= build environment =
+* Java 1.6+
+* Project also includes Eclipse Juno's configuration.
+
+= how to run =
+This project is mavenized and has two maven module, which is server and client.
+To run server first,
+* java -jar <jar filename under /target> or simply
+* ./start.sh under /server.
+To run client
+* ./client.sh
+
+Generated jar with "mvn package" isn't executable jar, so you can't "java -jar xxx.jar" for client running.
 
 
-* how to run
-
-java -jar <jar filename under /target>
-
-
-* how to get result
+= how to get result = 
 
 For testing, you can simply send SOAP message as below through your telnet, RestClient in FireFox, or others.
 
@@ -36,3 +44,6 @@ SOAPAction: ""
     <tns:getTimeAsString xsi:nil="true" />
   </soap:Body>
 </soap:Envelope>
+
+
+Or simply run included client module according to above instructions.
