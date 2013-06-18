@@ -4,8 +4,9 @@ This is super-simple SOAP WebService template project. This project uses JAX-WS 
 # author 
 * Wonhee Jung
 
-= build environment =
+# build environment 
 * Java 1.6+
+* Maven
 * Project also includes Eclipse Juno's configuration.
 
 # how to run 
