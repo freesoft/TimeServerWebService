@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/freesoft/TimeServerWebService.svg?branch=master)](https://travis-ci.org/freesoft/TimeServerWebService)
+
 This is super-simple SOAP WebService template project. This project uses JAX-WS libraries included in Java 1.6+.
 (Project itself is using Java 7)
 
