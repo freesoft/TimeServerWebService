@@ -1,15 +1,10 @@
 [![Build Status](https://travis-ci.org/freesoft/TimeServerWebService.svg?branch=master)](https://travis-ci.org/freesoft/TimeServerWebService)
 
 This is super-simple SOAP WebService template project. This project uses JAX-WS libraries included in Java 1.6+.
-(Project itself is using Java 7)
-
-# author 
-* Wonhee Jung
 
 # build environment 
-* Java 1.6+
+* Java 1.8+, but it doesn't use any Java8 specific features so you can simply build it with Java6+(I guess). Just change build targetr version in pom.xml.
 * Maven
-* Project also includes Eclipse Juno's configuration.
 
 # how to run 
 This project is mavenized and has two maven module, which is server and client.

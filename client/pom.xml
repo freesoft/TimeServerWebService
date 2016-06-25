@@ -7,14 +7,14 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.potatosoft</groupId>
-	<artifactId>timeserver-client</artifactId>
+	<artifactId>client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TimeServer Client Module</name>
 	<description>SOAP based TimeServer WebService</description>
 	<packaging>jar</packaging>
 
 	<properties>
-		<jdk.version>1.7</jdk.version>
+		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
 	</properties>
@@ -30,7 +30,6 @@
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 					<encoding>${project.build.sourceEncoding}</encoding>
-					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
 				</configuration>
 			</plugin>
 
